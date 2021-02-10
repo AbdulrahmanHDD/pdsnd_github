@@ -190,6 +190,7 @@ def user_stats(df):
     print('-'*40)
 
 def raw_data(df):
+    """Ask the user if he want to jump to the next five trips data."""
     nexth=0
     while True:
         ask=input('Would you like to view the next five trips data? Enter yes or no.\n').lower()
