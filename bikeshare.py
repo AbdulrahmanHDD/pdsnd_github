@@ -209,12 +209,12 @@ def user_stats(df):
         print(f"The number of each user type:\n{gender_count}")
 
         # TO DO: Display earliest, most recent, and most common year of birth
-        mn = int(df["Birth Year"].min())
-        mx = int(df["Birth Year"].max())
-        mc = df["Birth Year"].mode()[0]
-        print(f"The erliest year of birth: {mn}\n")
-        print(f"The most recent year of birth: {mx}\n")
-        print(f"The most common year of birth:{int(mc)}")
+        earliest = int(df["Birth Year"].min())
+        most_recent = int(df["Birth Year"].max())
+        most_common = df["Birth Year"].mode()[0]
+        print(f"The erliest year of birth: {earliest}\n")
+        print(f"The most recent year of birth: {most_recent}\n")
+        print(f"The most common year of birth:{int(most_common)}")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print("-" * 40)
